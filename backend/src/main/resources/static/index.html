@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071d35"><meta name="description" content="SamadhanPoint — Multilingual citizen grievance triage, SLA monitoring and human escalation.">
+<title>SamadhanPoint — Turning Concerns into Solutions</title>
+<link rel="icon" href="/assets/samadhanpoint-logo.png"><link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="splash" class="splash"><div class="splash-glow"></div><img src="/assets/samadhanpoint-logo.png" alt="SamadhanPoint"><div class="splash-loader"><i></i><i></i><i></i></div><p>Turning Concerns into Solutions.</p></div>
+<div id="login" class="login-screen hidden">
+  <div class="ambient a1"></div><div class="ambient a2"></div><div class="ambient a3"></div>
+  <div class="login-wrap">
+    <section class="login-brand">
+      <div class="brand-chip"><span class="pulse-dot"></span> CIVIC INTELLIGENCE PLATFORM</div>
+      <img src="/assets/samadhanpoint-logo.png" alt="SamadhanPoint" class="login-logo">
+      <h1>One complaint.<br><span>One smart route.</span><br>One accountable solution.</h1>
+      <p>Multilingual triage • automatic ward routing • SLA prediction • human escalation • audit-ready workflow</p>
+      <div class="feature-grid" aria-label="SamadhanPoint features">
+        <div class="feature-card"><span>✦</span><div><b>AI Triage</b><small>Smart category, priority & routing</small></div></div>
+        <div class="feature-card"><span>⌖</span><div><b>Ward Routing</b><small>GPS & pincode based civic mapping</small></div></div>
+        <div class="feature-card"><span>◷</span><div><b>SLA Monitoring</b><small>Track deadlines and escalation</small></div></div>
+        <div class="feature-card"><span>◎</span><div><b>Multilingual</b><small>English, Hindi & Marathi support</small></div></div>
+        <div class="feature-card"><span>✓</span><div><b>Audit Ready</b><small>Transparent workflow & activity trail</small></div></div>
+      </div>
+    </section>
+    <section class="auth-card glass">
+      <div class="auth-head"><div><span class="eyebrow">WELCOME</span><h2>Access SamadhanPoint</h2></div><span class="secure">⌁ Secure access</span></div>
+      <div class="auth-tabs"><button class="active" data-tab="credentials">Sign in</button><button data-tab="register">Register</button></div>
+      <div id="credPanel" class="auth-panel">
+        <form id="loginForm" class="form">
+          <label>Username or email<input id="username" autocomplete="username" placeholder="Enter username or email"></label>
+          <label>Password<div class="password-wrap"><input id="password" type="password" autocomplete="current-password" placeholder="Enter password"><button type="button" id="togglePassword">◉</button></div></label>
+          <button class="primary wide" type="submit">Sign in securely <span>→</span></button>
+          <div class="auth-links"><button type="button" class="link-btn" id="forgotPasswordBtn">Forgot password?</button><span>•</span><small>OTP verification</small></div>
+        </form>
+      </div>
+      <div id="registerPanel" class="auth-panel hidden">
+        <form id="registerForm" class="form">
+          <div class="row2"><label>Full name<input id="regName" placeholder="Your full name"></label><label>Mobile<input id="regPhone" inputmode="numeric" placeholder="10-digit mobile"></label></div>
+          <label>Email<input id="regEmail" type="email" placeholder="you@example.com"></label>
+          <div class="row2"><label>Password<input id="regPassword" type="password" autocomplete="new-password" placeholder="6+ characters"></label><label>Confirm password<input id="regPassword2" type="password" autocomplete="new-password" placeholder="Repeat password"></label></div>
+          <label>Address<input id="regAddress" placeholder="House / street / locality"></label>
+          <div class="row2"><label>Pincode<input id="regPincode" inputmode="numeric" maxlength="6" placeholder="Auto-filled from GPS"></label><label>Preferred language<select id="regLang"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select></label></div>
+          <div class="actions"><button type="button" class="secondary" id="regGpsBtn">⌖ Detect my location</button><span id="regGpsStatus" class="muted">GPS can automatically resolve pincode + ward.</span></div>
+          <div id="wardPreview" class="ward-preview"><span class="mini-spinner"></span> Enter pincode or use GPS to auto-detect Ward + Zone.</div>
+          <button class="primary wide" type="submit">Create Citizen Account <span>→</span></button>
+        </form>
+      </div>
+      <div id="loginError" class="error hidden"></div>
+    </section>
+  </div>
+</div>
+<div id="app" class="hidden">
+  <aside class="sidebar">
+    <div class="brand"><img src="/assets/samadhanpoint-logo.png" alt=""><div><b>SamadhanPoint</b><small>Turning Concerns into Solutions.</small></div></div>
+    <div class="profile-mini"><div class="avatar" id="avatar">C</div><div><b id="sideName">Citizen</b><small id="sideRole">CITIZEN</small></div></div>
+    <nav id="nav"></nav>
+    <div class="sidebar-bottom"><button id="themeBtn">◐ <span>Appearance</span></button><button id="logoutBtn">↪ <span>Sign out</span></button></div>
+  </aside>
+  <main>
+    <header class="topbar"><button id="mobileMenuBtn" class="mobile-menu-btn" type="button" aria-label="Open menu">☰</button><div><div class="crumb">SamadhanPoint <span>/</span> <b id="crumbRole">Citizen</b></div><h2 id="pageTitle">Dashboard</h2></div><div class="top-actions"><div class="live-pill"><i></i> System online</div><select id="langSelect" title="Language"><option value="en">EN</option><option value="hi">HI</option><option value="mr">MR</option></select><button id="refreshBtn" class="icon-btn" title="Refresh">↻</button><button id="notificationBell" class="icon-btn notify-btn" title="Notifications">♢<span id="notificationBadge" class="notify-badge hidden">0</span></button><button id="assistantBtn" class="ai-btn">✦ AI Assistant</button><div class="avatar top-avatar" id="topAvatar">C</div></div></header>
+    <section id="content" class="content"></section>
+  </main>
+</div>
+<div id="toast" class="toast"></div><div id="modal" class="modal hidden"></div>
+<script src="/js/app.js"></script>
+</body></html>

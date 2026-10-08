@@ -1,0 +1,25 @@
+id,language,expected_category,text
+001,en,ROADS_POTHOLES,There is a deep pothole near the school gate and vehicles are swerving.
+002,en,ROADS_POTHOLES,The main road is damaged and needs road repair.
+003,hi,ROADS_POTHOLES,मेरे इलाके की सड़क पर बड़ा गड्ढा है कृपया सड़क की मरम्मत करें
+004,mr,ROADS_POTHOLES,मुख्य रस्त्यावर मोठा खड्डा आहे कृपया रस्ता दुरुस्त करा
+005,en,WATER_SUPPLY,There is no water supply in our building since yesterday.
+006,en,WATER_SUPPLY,Water pipeline leakage is wasting water near the market.
+007,hi,WATER_SUPPLY,हमारे इलाके में पानी की सप्लाई नहीं आ रही है
+008,mr,WATER_SUPPLY,पाईपलाईनमधून पाण्याची गळती होत आहे
+009,en,WASTE_MANAGEMENT,Garbage has not been collected for five days and there is a foul smell.
+010,hi,WASTE_MANAGEMENT,कचरा कई दिनों से नहीं उठाया गया है
+011,mr,WASTE_MANAGEMENT,कचरा उचलला गेला नाही आणि परिसरात दुर्गंधी आहे
+012,en,ELECTRICITY_STREETLIGHTS,The street light near the bus stop is not working at night.
+013,hi,ELECTRICITY_STREETLIGHTS,हमारे इलाके की स्ट्रीट लाइट पांच दिनों से बंद है
+014,mr,ELECTRICITY_STREETLIGHTS,रस्त्यावरील पथदिवे बंद आहेत आणि रात्री अंधार होतो
+015,en,PUBLIC_HEALTH,The public toilet is dirty and has a very bad smell.
+016,hi,PUBLIC_HEALTH,सार्वजनिक शौचालय में बहुत गंदगी है और सफाई नहीं हुई
+017,mr,PUBLIC_HEALTH,सार्वजनिक शौचालयाची स्वच्छता होत नाही आणि दुर्गंधी आहे
+018,en,PUBLIC_TRANSPORT,The bus stop has no buses during peak hours and commuters are stranded.
+019,hi,PUBLIC_TRANSPORT,बस स्टॉप पर बसें समय पर नहीं आती हैं
+020,mr,PUBLIC_TRANSPORT,बस स्थानकावर वेळेवर बस मिळत नाही
+021,en,URBAN_SANITATION,The drainage manhole is overflowing and sewage is on the road.
+022,hi,URBAN_SANITATION,नाला भर गया है और गंदा पानी सड़क पर बह रहा है
+023,mr,URBAN_SANITATION,गटार तुंबले आहे आणि सांडपाणी रस्त्यावर आले आहे
+024,en,OTHER,I want information about the municipal grievance process.

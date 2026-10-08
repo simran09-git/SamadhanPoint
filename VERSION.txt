@@ -1,0 +1,2 @@
+SamadhanPoint 3.1.0 - BIT-16 Final Capstone Package
+Includes: multilingual triage/evaluation, server-authoritative routing, live SLA countdown and late-resolution breach detection, database-managed 24-ward master, database-backed Admin widget preferences, OTP reset, role-scoped AI assistant, photo/GPS evidence, CI/test/evaluation dossier, Docker deployment and final mobile-responsive UI.
